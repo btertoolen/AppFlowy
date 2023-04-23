@@ -21,7 +21,7 @@ class FolderNotificationParser
     required FolderNotificationCallback callback,
   }) : super(
           id: id,
-          callback: callback,
+          callback: callback3,
           tyParser: (ty) => FolderNotification.valueOf(ty),
           errorParser: (bytes) => FlowyError.fromBuffer(bytes),
         );
