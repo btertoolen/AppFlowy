@@ -21,7 +21,7 @@ fn main() {
     .on_window_event(|_window_event| {})
     .on_menu_event(|_menu| {})
     .on_page_load(|window, _payload| {
-      let app_handler = window.app_handle();
+      let app_handler = window.app_handle()ee;
       register_notification_sender(TSNotificationSender::new(app_handler.clone()));
       // tauri::async_runtime::spawn(async move {});
       window.listen_global(AF_EVENT, move |event| {
